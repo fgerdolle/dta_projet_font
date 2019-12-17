@@ -1,0 +1,122 @@
+*
+{
+    font-family: Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../pictures/prospect2.png);
+    background-attachment:fixed;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+
+p{
+    color:whitesmoke;
+}
+
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h5{
+    color: whitesmoke;
+}
+
+img{
+    width: 15vw;
+    border: solid 1px #0fafeb;
+}
+
+li{
+    color: whitesmoke;
+    list-style-type:none;
+    text-align: center;
+    margin-top: 6vw;
+}
+.note{
+    margin-top: 5vw;
+
+}
+
+table{
+    width: auto;
+    
+}
+
+tr{
+    border: 3px solid #0fafeb;
+    width: auto;
+}
+
+td{
+    border: 3px solid #0fafeb;
+    width: auto;
+    text-align: left;
+}
+
+th{
+    text-align: center;
+    border: 3px solid #0fafeb;
+    width: auto;
+    color: whitesmoke;
+}
+
+.buttonajoutrdv{
+    text-align: right;
+    border-bottom: none;
+    
+}
+.btn{
+    border-radius: 0;
+    background-color: #17a2b8;
+    color : whitesmoke;
+    border: 3px solid #0fafeb;
+}
+
+.table-responsive {
+    display: inline-table;
+}
+
+.page-link:hover{
+    background-color: #17a2b8;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: whitesmoke;
+    background-color: #fff;
+    border: 1px solid #0fafeb;
+}
+form{
+    color: whitesmoke;
+}
+
+.btn-info , .btn-secondary {
+    border-radius: 0;
+    background-color: #17a2b8;
+    color: whitesmoke;
+    border: 3px solid #0fafeb;
+    text-align: center;
+    margin-left: 3vw;
+}
+
+label{
+    color: whitesmoke;
+    margin-left: 1vw;
+
+}
+
+a {
+    color: #0fafeb;
+    text-decoration: none;
+    background-color: transparent;
+}

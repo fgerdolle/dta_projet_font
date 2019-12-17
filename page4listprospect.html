@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link href="styles/page4.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/c86141f044.js" crossorigin="anonymous"></script>
+
+  <title>Page 4 Liste des Prospects</title>
+  </head>
+  <body>
+  <div class="container-fluid">
+  <header>
+    <!-- Ma barre de Navigation-->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link" href="page3RDV.html">Rendez-Vous</a>
+    <a class="flex-sm-fill text-sm-center nav-link active" href="#">Liste des Prospects</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="page5lecatalogue.html">Le Catalogue</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="page6monprofil.html">Mon Profile</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="page1nonlog.html">Log Out</a>
+
+    </nav>
+  </header>
+  </div>
+  <div class="container-fluid">
+  
+  <br>
+  <br>
+  <div class="table-responsive">
+      <!-- Button trigger modal -->
+  <div class="buttonajoutrdv">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Ajouter un prospect
+      </button>
+  </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <label for="photo">Photo :</label> <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <br>
+                <label>Prenom :</label><input type="text" name="prenom"/>
+                <br>
+                <label>Nom :</label><input type="text" name="nom"/>
+                <br>
+                <label>Age :</label><input type="text" name="age"/>
+                <br>
+                <label>Date de naissance</label> : <input type="date" name="date"/>
+                <br>
+                <label> Sexe :
+                <input type="radio" name="sexe" value="H" id="sexeH" /> <label for="sexeH">Homme</label>
+                <input type="radio" name="sexe" value="F" id="sexeF" /> <label for="sexeF">Femme</label>
+                <input type="radio" name="sexe" value="Autre" id="sexeAutre" /> <label for="sexeAutre">Autre</label>
+                </label>
+                <br>
+                <label> Téléphone :</label><input type="tel"/>
+                <br>
+                <label> E-mail :</label><input type="email"/>
+                <br>
+                <label> Adresse : </label><br><textarea name="""" id="" cols="30" rows="3"></textarea>
+                <br>
+              
+              </form>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-primary">Ajouter</button>
+                  </div>
+                </div>
+                </div>
+              </div>
+      </div>
+
+    <table class="table table-responsive">
+      <thead>
+        <tr class="bg-info">
+        <th scope="col">#</th>
+        <th scope="col">Photo</th>
+        <th scope="col">Identité + Adresse</th>
+        <th scope="col">Achat</th>
+        <th scope="col">Note</th>
+        <th scope="col">#</th>
+
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-info">
+        <th scope="row">1</th>
+        <td>
+          <img src="pictures/pinocchio.jpg" alt="photo id de pinocchio">
+        </td>
+        <td>
+          <p> 
+          Prénom : Pinnochio<br>
+          Nom :  Marcello Polo<br>
+          Date de Naissance : 7 juillet, 1881<br>
+          Age : 138 ans<br>
+          Sex : Homme <br>
+          Telephone : 06 58 69 74 28<br>
+          E-mail : pino@enbois.com <br>
+          <br>
+          Adresse : 54 rue du moulins<br>
+          42100 St etienne
+          </p>
+        </td>
+        <td>
+          <ul>
+          <li>Du Vernis à bois</li>
+          </ul>
+        </td>
+        <td>
+          <p class="note">
+          Fortement interreser pour devenir un vrai petit garçon.<br>
+          <br>
+          Quand il ment son nez s'allonge.
+          </p>
+        </td>
+        <td>
+            <label>Ajouter aux RDV</label><br><button type="button" class="btn btn-info"><i class="fas fa-plus"></i></button><br>
+            <br>
+            <label>Modifier</label><br><button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-pen"></i></button><br>
+            <br>
+            <label>Supprimer</label><br><button type="button" class="btn btn-info"><i class="fas fa-times"></i></button><br>
+        </td>
+      </tr>
+        <tr class="bg-info">
+          <th scope="row">2</th>
+          <td>
+          <img src="pictures/donald.jpg" alt="photo id de donald">
+          </td>
+          <td>
+          <p> 
+            Prénom : Donald<br>
+            Nom :  Duck<br>
+            Date de Naissance : 9 juin, 1934<br>
+            Age : 85 ans<br>
+            Sex : Homme <br>
+            Telephone : 06 58 69 74 28<br>
+            E-mail : dd@canard.com<br>
+            <br>
+            Adresse : 5 rue de la marre<br>
+            42100 St etienne
+          </p>
+          </td>
+          <td>
+          <ul>
+            <li>Des palmes</li>
+          </ul>
+          </td>
+          <td>
+          <p class="note">
+              Temperament colérique<br>
+              <br>
+              Problème d'elocution.
+          </p>
+          </td>
+          <td>
+              <label>Ajouter aux RDV</label><br><button type="button" class="btn btn-info"><i class="fas fa-plus"></i></button><br>
+              <br>
+              <label>Modifier</label><br><button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-pen"></i></button><br>
+              <br>
+              <label>Supprimer</label><br><button type="button" class="btn btn-info" ><i class="fas fa-times"></i></button><br>
+          </td>
+        </tr>
+        </tr>
+        <tr class="bg-info">
+          <th scope="row">3</th>
+          <td>
+          <img src="pictures/raiponce.jpg" alt="photo id de raiponce">
+          </td>
+          <td>
+          <p> 
+            Prénom : Raiponce<br>
+            Nom :  <br>
+            Date de Naissance : 24 novembre 2010<br>
+            Age : 18 ans<br>
+            Sex : Femme <br>
+            Telephone : 06 58 69 74 28<br>
+            E-mail : rairai@longcheveux.com<br>
+            <br>
+            Adresse : 28 rue de la tour<br>
+            42100 St etienne
+          </p>
+          </td>
+          <td>
+          <ul>
+            <li>1 lisseuse à cheveux</li>
+          </ul>
+          </td>
+          <td>
+          <p class="note">
+              Chante beaucoup<br>
+              <br>
+              Pose beaucoup de question.
+          </p>
+          </td>
+          <td>
+              <label>Ajouter aux RDV</label><br><button type="button" class="btn btn-info"><i class="fas fa-plus"></i></button><br>
+              <br>
+              <label>Modifier</label><br><button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-pen"></i></button><br>
+              <br>
+              <label>Supprimer</label><br><button type="button" class="btn btn-info"><i class="fas fa-times"></i></button><br>
+          </td>
+        </tr>
+        </tr>
+      </tbody>  
+    </table>
+  </div>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+    </li>
+    </ul>
+  </nav>
+  
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+  </body>
+</html>

@@ -1,0 +1,23 @@
+td , th , tr{
+    width: auto;
+    text-align: center;
+    border: solid black 1px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color:#007bff;
+    margin: 1vw;
+}
+.btn-primary:hover{
+    background-color: #223d5a;
+}
+
+td:hover{
+    background-color: #223d5a;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #007bff;
+}

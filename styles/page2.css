@@ -1,0 +1,96 @@
+/* J'applique ces style à tout mes élements*/
+*
+{
+    font-family: Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../pictures/prospect2.png);
+    background-attachment:fixed;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+header, html , body {
+    width: 100%;
+    height: 100%;
+}
+
+.centrage{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 20px whitesmoke;
+    
+}
+
+h1{
+    font-size: 60px;
+    color : whitesmoke;
+}
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+#open{
+    width: 200px;
+    height : 200px;
+}
+
+
+.btn-primary {
+   border-color: whitesmoke;
+} 
+
+.btn-primary:hover {
+    border-color: whitesmoke;
+ } 
+
+label{
+   color :whitesmoke 
+}
+
+
+input::-webkit-input-placeholder {
+    color: whitesmoke !important;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+    color: whitesmoke !important; 
+    }
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: whitesmoke !important; 
+    }
+    input:-ms-input-placeholder { 
+    color: whitesmoke !important; 
+    }
+    
+:placeholder-shown{
+    color :whitesmoke;
+}
+.form-control:focus{
+    color: whitesmoke;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 5rem;
+    border-radius: 10rem;
+}

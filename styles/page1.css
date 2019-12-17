@@ -1,0 +1,467 @@
+/* J'applique ces style à tout mes élements*/
+*
+{
+    font-family: Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../pictures/prospect2.png);
+    background-attachment:fixed;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+header, html , body {
+    width: 100%;
+    height: 100%;
+}
+
+.centrage{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 20px whitesmoke;
+    
+}
+
+h1{
+    font-size: 60px;
+    color : whitesmoke;
+}
+.card-container.card {
+    max-width: 350px;
+    border: solid whitesmoke;
+    border-radius: 0.5rem;
+
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: whitesmoke;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px whitesmoke;
+    -webkit-box-shadow: 0px 2px 2px whitesmoke;
+    box-shadow: 0px 2px 2px whitesmoke;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: whitesmoke;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: whitesmoke;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px whitesmoke,0 0 8px whitesmoke;
+    box-shadow: inset 0 1px 1px whitesmoke,0 0 8px whitesmoke;
+}
+
+.btn.btn-signin {
+    background-color: whitesmoke;
+    background-color: linear-gradient(whitesmoke, whitesmoke);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color:gray;
+}
+
+.forgot-password {
+    color: whitesmoke;
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: gray;
+}
+
+
+button .btn .btn-lg .btn-primary .btn-block .btn-signin{
+    background-color: gray;
+
+}
+
+#open{
+    width: 200px;
+    height : 200px;
+
+}
+
+.fas .fa-power-off{
+    width: 200px;
+    height : 200px;
+}
+
+.btn-primary {
+   border-color: whitesmoke;
+} 
+
+.btn-primary:hover {
+    border-color: whitesmoke;
+ } 
+
+label{
+   color :whitesmoke 
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:whitesmoke;
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    border: 1px solid whitesmoke;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input::-webkit-input-placeholder {
+    color: whitesmoke !important;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+    color: whitesmoke !important; 
+    }
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: whitesmoke !important; 
+    }
+    input:-ms-input-placeholder { 
+    color: whitesmoke !important; 
+    }
+    
+:placeholder-shown{
+    color :whitesmoke;
+}
+.form-control:focus{
+    color: whitesmoke;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ /* J'applique ces style à tout mes élements*/
+*
+{
+    font-family: Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../pictures/prospect.png);
+    background-attachment:fixed;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+header, html , body {
+    width: 100%;
+    height: 100%;
+}
+
+.centrage{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    display:table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 20px whitesmoke;
+    
+}
+
+h1{
+    font-size: 60px;
+    color : whitesmoke;
+}
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.btn {
+    font-weight: 700;
+    height: 36px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*
+ * Card component
+ */
+.card {
+    background-color: whitesmoke;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px whitesmoke;
+    -webkit-box-shadow: 0px 2px 2px whitesmoke;
+    box-shadow: 0px 2px 2px whitesmoke;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+
+/*
+ * Form styles
+ */
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.reauth-email {
+    display: block;
+    color: whitesmoke;
+    line-height: 2;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin #inputEmail,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: whitesmoke;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px whitesmoke,0 0 8px whitesmoke;
+    box-shadow: inset 0 1px 1px whitesmoke,0 0 8px whitesmoke;
+}
+
+.btn.btn-signin {
+    background-color: whitesmoke;
+    background-color: linear-gradient(whitesmoke, whitesmoke);
+    padding: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color:gray;
+}
+
+.forgot-password {
+    color: whitesmoke;
+}
+
+.forgot-password:hover,
+.forgot-password:active,
+.forgot-password:focus{
+    color: gray;
+}
+
+
+button .btn .btn-lg .btn-primary .btn-block .btn-signin{
+    background-color: gray;
+
+}
+
+#open{
+    width: 200px;
+    height : 200px;
+
+}
+
+.fas .fa-power-off{
+    width: 200px;
+    height : 200px;
+}
+
+.btn-primary {
+   border-color: whitesmoke;
+} 
+
+.btn-primary:hover {
+    border-color: whitesmoke;
+ } 
+
+label{
+   color :whitesmoke 
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:whitesmoke;
+    background-color: whitesmoke;
+    background-clip: padding-box;
+    border: 1px solid whitesmoke;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input::-webkit-input-placeholder {
+    color: whitesmoke !important;
+    }
+    input:-moz-placeholder { /* Firefox 18- */
+    color: whitesmoke !important; 
+    }
+    input::-moz-placeholder {  /* Firefox 19+ */
+    color: whitesmoke !important; 
+    }
+    input:-ms-input-placeholder { 
+    color: whitesmoke !important; 
+    }
+    
+:placeholder-shown{
+    color :whitesmoke;
+}
+.form-control:focus{
+    color: whitesmoke;
+}
+
+    
+
+}

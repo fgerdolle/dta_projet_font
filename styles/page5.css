@@ -1,0 +1,78 @@
+*
+{
+    font-family: Arial , Verdana , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: url(../pictures/prospect2.png);
+    background-attachment:fixed;
+    background-color:white;
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size: cover;
+
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+h3.h3{
+    text-align:center;
+    margin:1em;
+    text-transform:capitalize;
+    font-size:1.7em;
+    color: whitesmoke;
+    text-decoration: #0fafeb underline;
+
+}
+
+img{
+    width: 10vw;
+    border: solid 1px whitesmoke;;
+    margin-left: 1vw;
+}
+
+.title {
+    color: whitesmoke;
+}
+
+.price
+{
+    color : whitesmoke;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0fafeb;
+    border-color: #0fafeb;
+
+}
+form , h5{
+    color: whitesmoke;
+}
+
+a {
+    color: #0fafeb;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-body{
+    color :whitesmoke;
+    border-color: #0fafeb;
+    width: auto;
+
+}
+
+.card{
+    border-color: none;
+    background-color: none;
+    border: none;
+ 
+}
+
+h5{
+    text-align: center;
+}
+
