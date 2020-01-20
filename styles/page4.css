@@ -9,6 +9,7 @@
     background-repeat:no-repeat;
     background-position:center center;
     background-size: cover;
+    color: whitesmoke;
 
 }
 
@@ -50,19 +51,17 @@ table{
 
 tr{
     border: 3px solid #0fafeb;
-    width: auto;
 }
 
 td{
     border: 3px solid #0fafeb;
-    width: auto;
-    text-align: left;
+    text-align: center;
+    color: whitesmoke;
 }
 
 th{
     text-align: center;
     border: 3px solid #0fafeb;
-    width: auto;
     color: whitesmoke;
 }
 
@@ -119,4 +118,15 @@ a {
     color: #0fafeb;
     text-decoration: none;
     background-color: transparent;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    color: whitesmoke;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    text-align: center;
 }
