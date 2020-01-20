@@ -1,6 +1,6 @@
 <?php
 namespace Dao;
-use Domain\Prospect;
+use Domain\Prospect as Prospect;
 
 class ProspectDao extends DaoBase {
     public function __construct($config) {
@@ -130,5 +130,49 @@ class ProspectDao extends DaoBase {
         return $query->execute();
 
          
+    }
+
+    public function getProspect($id) {
+        
+        $prospect = null;
+        
+        $query = $this->bdd->prepare("SELECT id, firstName, lastName, age, birth, gender, phone, mail, adress, purchase, remarque FROM prospects where id = :id");
+        
+        $query->bindParam(":id", $id);
+        
+        if ($query->execute()) {
+            
+            if ($donnees = $query->fetch()) {
+                
+                $prospect = new Prospect(
+                    
+                $donnees["id"],
+                
+                $donnees['firstName'],
+                
+                $donnees['lastName'],
+ 
+                $donnees['age'],
+                
+                $donnees['birth'],
+
+                $donnees['gender'],
+
+                $donnees['phone'],
+
+                $donnees['mail'],
+
+                $donnees['adress'],
+
+                $donnees['purchase'],
+
+                $donnees['remarque']
+            );
+
+
+            }
+        }
+        
+        return $prospect;
     }
 }

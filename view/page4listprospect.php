@@ -42,13 +42,10 @@ ob_start();
 			<th>First Name</th>
       <th>Last Name</th>
       <th>Age</th>
-      <th>Birth</th>
       <th>Gender</th>
       <th>Phone</th>
       <th>Mail</th>
       <th>Adress</th>
-      <th>Purchase</th>
-      <th>Remarque</th>
 			<th>Edit</th>
 			<th>Delete</th>
 		</tr>
@@ -59,16 +56,13 @@ ob_start();
 ?>
 		<tr>
 			<th scope="row"><?php echo $prospect->id ?></th> 
-			<td><?php echo $prospect->firstName ?></td>
+			<td><a href="ProspectController.php?id=<?php echo $prospect->id ?>"><?php echo $prospect->firstName ?></a></td>
       <td><?php echo $prospect->lastName ?></td>
       <td><?php echo $prospect->age ?></td> 
-			<td><?php echo $prospect->birth ?></td> 
 			<td><?php echo $prospect->gender ?></td> 
 			<td><?php echo $prospect->phone ?></td> 
       <td><?php echo $prospect->mail ?></td> 
       <td><?php echo $prospect->adress ?></td> 
-			<td><?php echo $prospect->purchase ?></td> 
-			<td><?php echo $prospect->remarque ?></td> 
 			<td><a href="updateProspectController.php?id=<?php echo $prospect->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
 			<td><a href="deleteProspectController.php?id=<?php echo $prospect->id ?>"><i class="fas fa-trash-alt"></i></a></td>
 		</tr>
