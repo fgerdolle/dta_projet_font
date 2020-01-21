@@ -47,7 +47,9 @@ ob_start();
       <th>Mail</th>
       <th>Adress</th>
 			<th>Edit</th>
-			<th>Delete</th>
+      <th>Delete</th>
+      <th>RDV</th>
+
 		</tr>
 	</thead>
 	<tbody>
@@ -65,7 +67,8 @@ ob_start();
       <td><?php echo $prospect->adress ?></td> 
 			<td><a href="updateProspectController.php?id=<?php echo $prospect->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
 			<td><a href="deleteProspectController.php?id=<?php echo $prospect->id ?>"><i class="fas fa-trash-alt"></i></a></td>
-		</tr>
+      <td><a href="addRDVProspectController.php?id=<?php echo $prospect->id ?>"><i class="fas fa-plus"></i></a></td>
+    </tr>
 <?php 
         }
 ?>	  			
