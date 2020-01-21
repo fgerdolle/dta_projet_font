@@ -36,27 +36,27 @@ ob_start();
     </div>
     <br>
     <div>
-        <input type="text"  name="firstName" class="form-control" placeholder="FirstName" value="<?php  echo $firstName;?>">
+        <input type="text"  name="firstName" class="form-control" placeholder="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>" value="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="lastName" class="form-control" placeholder="LastName" value="<?php  echo $lastName;?>">
+        <input type="text" name="lastName" class="form-control" placeholder="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>" value="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>">
     </div>
     <br>
     <div>
-        <input type="phone" name="phone" class="form-control" placeholder="phone" value="<?php  echo $phone;?>">
+        <input type="phone" name="phone" class="form-control" placeholder="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>" value="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>">
     </div>
     <br>
     <div>
-        <input type="email" name="mail" class="form-control" placeholder="mail" value="<?php  echo $mail;?>">
+        <input type="email" name="mail" class="form-control" placeholder="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>" value="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="adress" class="form-control" placeholder="adress" value="<?php  echo $adress;?>">
+        <input type="text" name="adress" class="form-control" placeholder="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>" value="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="remarque" class="form-control" placeholder="remarque" value="<?php  echo $remarque;?>">
+        <input type="text" name="remarque" class="form-control" placeholder="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>" value="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>">
     </div>
     <br>
 
