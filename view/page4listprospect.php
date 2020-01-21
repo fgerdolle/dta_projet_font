@@ -12,7 +12,7 @@ ob_start();
   <header>
     <!-- Ma barre de Navigation-->
     <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fill text-sm-center nav-link" href="page3RDV.html">Rendez-Vous</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="RDVSController.php">Rendez-Vous</a>
     <a class="flex-sm-fill text-sm-center nav-link active" href="#">Liste des Prospects</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="page5lecatalogue.html">Le Catalogue</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="page6monprofil.html">Mon Profile</a>

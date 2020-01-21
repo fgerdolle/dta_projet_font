@@ -12,7 +12,7 @@ ob_start();
       <!-- Ma barre de Navigation-->
       <nav class="nav nav-pills flex-column flex-sm-row">
         <a class="flex-sm-fill text-sm-center nav-link active" href="#">Rendez-Vous</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="page4listprospect.html">Liste des Prospects</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="ProspectsController.php">Liste des Prospects</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="page5lecatalogue.html">Le Catalogue</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="page6monprofil.html">Mon Profile</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="page1nonlog.html">Log Out</a>
