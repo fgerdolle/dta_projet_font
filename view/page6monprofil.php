@@ -42,8 +42,6 @@ ob_start();
                         <div class="col-md-6">
                             <div class="profile-head">
                                         <h5>
-                                        <?php echo $prospecter->id ?>
-                                        
                                         <?php echo $prospecter->name ?>
                                         </h5>
                                         <h6>
@@ -51,10 +49,12 @@ ob_start();
                                         </h6>
                                         <div class="row">
                                                 <div class="col-md-12">
-                                                    <label>Votre Bio</label><br/>
+                                                    <label>Biographie :</label><br/>
+                                                    <p><?php echo $prospecter->biographie ?></p>
                                                     <br>
                                                     <br>
-                                                    <p>Votre Description</p>
+                                                    <p>Description :</p>
+                                                    <p><?php echo $prospecter->description ?></p>
                                                 </div>
                                             </div>
                             </div>
@@ -80,11 +80,7 @@ ob_start();
                                 <i class="fas fa-plus"></i> Modifier un Prospecter 
                                 </a>
                             </div>
-                            <div>          
-                                <a href="addRDVProspectController.php" class="btn btn-primary">
-                                <i class="fas fa-plus"></i> Supprimer un Prospecter 
-                                </a>
-                            </div>
+                           
                         </div>
                         <div class="col-md-8">
                             <div class="tab-content profile-tab" id="myTabContent">
