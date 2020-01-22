@@ -1,26 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-        <script src="scripts/jquery-3.4.1.js"></script>
-        <link href="styles/page5.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<?php 
+$title = 'Liste des Prospects'; 
+$css = 'page5.css';
+?>
 
-        <title>Page 5 Le Catalogue</title>
-    </head>
-    <body>
+<?php 
+ob_start(); 
+?>
         <header>
             <!-- Ma barre de Navigation-->
             <nav class="nav nav-pills flex-column flex-sm-row">
-                <a class="flex-sm-fill text-sm-center nav-link" href="page3RDV.html">Rendez-Vous</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="page4listprospect.html">Liste des Prospects</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="RDVSController.php">Rendez-Vous</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="ProspectsController.php">Liste des Prospects</a>
                 <a class="flex-sm-fill text-sm-center nav-link active" href="#">Le Catalogue</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="page6monprofil.html">Mon Profile</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="ProspectersController.php">Mon Profile</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="page1nonlog.html">Log Out</a>
 
             </nav>
@@ -115,11 +107,10 @@
           </div>
                 </div>
             </div>
-            
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-    </body>
-</html>
+            <?php 
+$content = ob_get_clean(); 
+?>
+
+<?php 
+require('../template/template.php'); 
+?>

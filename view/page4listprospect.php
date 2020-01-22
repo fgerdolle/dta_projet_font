@@ -14,7 +14,7 @@ ob_start();
     <nav class="nav nav-pills flex-column flex-sm-row">
     <a class="flex-sm-fill text-sm-center nav-link" href="RDVSController.php">Rendez-Vous</a>
     <a class="flex-sm-fill text-sm-center nav-link active" href="#">Liste des Prospects</a>
-    <a class="flex-sm-fill text-sm-center nav-link" href="page5lecatalogue.html">Le Catalogue</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="CatalogueController.php">Le Catalogue</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="ProspectersController.php">Mon Profile</a>
     <a class="flex-sm-fill text-sm-center nav-link" href="page1nonlog.html">Log Out</a>
 
