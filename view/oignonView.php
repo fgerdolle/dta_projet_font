@@ -45,7 +45,7 @@ ob_start();
                           <option selected>Choose...</option>
                           <option value="1">Salade</option>
                           <option value="2">Tomate</option>
-                          <option value="<a href="OignonController.php"/>Oignon</option>
+                          <option value="3">Oignon</option>
                         </select>
                         </div>
                       </div>
@@ -53,7 +53,7 @@ ob_start();
               </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-              <button type="submit" class="btn btn-primary">Ajouter</button>
+              <button type="button" class="btn btn-primary">Ajouter</button>
               </div>
             </div>
             </div>
@@ -65,10 +65,10 @@ ob_start();
               <div class="col">
                 <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                      <h5 class="card-title">Salade Verte</h5>
+                      <h5 class="card-title"><?php echo $oignon->name ?> </h5>
                       <img src="pictures/salade-verte.jpg">
-                      <p class="card-text">Salade verte traditionelle. Un classique.</p>
-                      <p> Prix : 6 euros</p>
+                      <p class="card-text"><?php echo $oignon->description ?></p>
+                      <p> Prix : <?php echo $oignon->price ?></p>
                     </div>
                 </div>
               </div>
