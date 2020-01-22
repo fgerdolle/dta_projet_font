@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-        <script src="scripts/jquery-3.4.1.js"></script>
-        <link href="styles/page6.css" rel="stylesheet" type="text/css">
+<?php 
+$title = 'Profil Prospecter'; 
+$css = 'page6.css';
 
-        <title>Page 6 Mon Profile</title>
-    </head>
-    <body>
-        <header>
+?>
+
+<?php 
+ob_start(); 
+?>
             <!-- Ma barre de Navigation-->
             <nav class="nav nav-pills flex-column flex-sm-row">
-                <a class="flex-sm-fill text-sm-center nav-link" href="page3RDV.html">Rendez-Vous</a>
-                <a class="flex-sm-fill text-sm-center nav-link" href="page4listprospect.html">Liste des Prospects</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="RDVSController.php">Rendez-Vous</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="ProspectsController.php">Liste des Prospects</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="page5lecatalogue.html">Le Catalogue</a>
                 <a class="flex-sm-fill text-sm-center nav-link active" href="#">Mon Profile</a>
                 <a class="flex-sm-fill text-sm-center nav-link" href="page1nonlog.html">Log Out</a>
@@ -27,6 +20,11 @@
         <br>
         <br>
         <br>
+
+        <?php
+        foreach ($prospecters as $prospecter) {
+?>
+
         <div class="container emp-profile">
                 <form method="post">
                     <div class="row">
@@ -44,10 +42,12 @@
                         <div class="col-md-6">
                             <div class="profile-head">
                                         <h5>
-                                            Thibaut L'Elf Roux
+                                        <?php echo $prospecter->id ?>
+                                        
+                                        <?php echo $prospecter->name ?>
                                         </h5>
                                         <h6>
-                                                Prospecter pour de la salade
+                                        <?php echo $prospecter->job ?> 
                                         </h6>
                                         <div class="row">
                                                 <div class="col-md-12">
@@ -60,9 +60,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-md-2">
-                            <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-                        </div>
+                        
                     </div>
                     <div class="row">
                         <div class="col-md-4">
@@ -71,6 +69,21 @@
                                 <a href="">Website Link</a><br/>
                                 <a href="">Bootsnipp Profile</a><br/>
                                 <a href="">Bootply Profile</a>
+                            </div>
+                            <div>          
+                                <a href="addRDVProspectController.php" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Changer de Prospecter 
+                                </a>
+                            </div>
+                            <div>          
+                                <a href="updateProspecterController.php?id=<?php echo $prospecter->id ?>" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Modifier un Prospecter 
+                                </a>
+                            </div>
+                            <div>          
+                                <a href="addRDVProspectController.php" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Supprimer un Prospecter 
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-8">
@@ -90,7 +103,7 @@
                                                     <label>Id Utilisateur</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>titi_l'elfroux</p>
+                                                    <p><?php echo $prospecter->idUser ?> </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -98,7 +111,7 @@
                                                     <label>Nom</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Thibaut Gerin</p>
+                                                    <p><?php echo $prospecter->name ?>  </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -106,7 +119,7 @@
                                                     <label>E-mail</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>ti_elf_roux@gmail.com</p>
+                                                    <p><?php echo $prospecter->mail ?></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -114,7 +127,7 @@
                                                     <label>Télephone</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>123 456 7890</p>
+                                                    <p><?php echo $prospecter->phone ?> </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -122,7 +135,7 @@
                                                     <label>Profession</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Commercial en vente de salade</p>
+                                                    <p><?php echo $prospecter->job ?> </p>
                                                 </div>
                                             </div>
                                 </div>
@@ -132,7 +145,7 @@
                                                     <label>Experience</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>Expert</p>
+                                                    <p><?php echo $prospecter->experience ?> </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -140,23 +153,15 @@
                                                     <label>Euros/Heure</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>10€/hr</p>
+                                                    <p><?php echo $prospecter->salary ?> </p>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <label>Total Projects</label>
+                                                    <label>Langue</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>230</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Niveau en Elfish</label>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <p>Expert</p>
+                                                    <p><?php echo $prospecter->langue ?> </p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -164,7 +169,7 @@
                                                     <label>Disponibilité</label>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <p>6 mois</p>
+                                                    <p><?php echo $prospecter->availability ?> </p>
                                                 </div>
                                             </div>
                                 </div>
@@ -173,10 +178,14 @@
                     </div>
                 </form>           
             </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
-    </body>
-</html>
+
+            <?php 
+        }
+?> 
+<?php 
+$content = ob_get_clean(); 
+?>
+
+<?php 
+require('../template/template.php'); 
+?>
