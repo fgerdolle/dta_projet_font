@@ -11,7 +11,7 @@ class ProspecterDao extends DaoBase {
         
         $result = [];
         
-        $reponse = $this->bdd->query("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability FROM prospecters order by id");
+        $reponse = $this->bdd->query("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability, biographie, description FROM prospecters order by id");
         
         while ($donnees = $reponse->fetch()) {
             
@@ -25,9 +25,12 @@ class ProspecterDao extends DaoBase {
             $salary = $donnees["salary"];
             $langue = $donnees["langue"];
             $availability = $donnees["availability"];
+            $biographie = $donnees["biographie"];
+            $description = $donnees["description"];
+
 
             
-            $prospecter = new Prospecter($id, $idUser, $name, $mail, $phone, $job, $experience, $salary, $langue, $availability);
+            $prospecter = new Prospecter($id, $idUser, $name, $mail, $phone, $job, $experience, $salary, $langue, $availability, $biographie, $description);
             
             $result[] = $prospecter;
         }
@@ -41,7 +44,7 @@ class ProspecterDao extends DaoBase {
         
         $result = NULL;
         
-        $query = $this->bdd->prepare("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability FROM prospecters where id = :id");
+        $query = $this->bdd->prepare("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability, biographie, description FROM prospecters where id = :id");
         
         $query->bindParam(":id", $id);
         
@@ -59,9 +62,12 @@ class ProspecterDao extends DaoBase {
                 $salary = $donnees["salary"];
                 $langue = $donnees["langue"];
                 $availability = $donnees["availability"];
+                $biographie = $donnees["biographie"];
+                $description = $donnees["description"];
+
 
                 
-                $result = new Prospecter ($id, $idUser, $name, $mail, $phone, $job, $experience, $salary, $langue, $availability);
+                $result = new Prospecter ($id, $idUser, $name, $mail, $phone, $job, $experience, $salary, $langue, $availability, $biographie, $description);
             }
         }
         
@@ -74,7 +80,7 @@ class ProspecterDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("INSERT INTO prospecters (idUser, name, mail, phone, job, experience, salary, langue, availability) VALUES (:idUser, :name, :mail, :phone, :job, :experience, :salary, :langue, :availability)");
+        $query = $this->bdd->prepare("INSERT INTO prospecters (idUser, name, mail, phone, job, experience, salary, langue, availability, biographie, descriptions) VALUES (:idUser, :name, :mail, :phone, :job, :experience, :salary, :langue, :availability, :biographie, :description)");
         
         $query->bindParam(":idUser", $prospecter->idUser);
         $query->bindParam(":name", $prospecter->name);
@@ -85,6 +91,9 @@ class ProspecterDao extends DaoBase {
         $query->bindParam(":salary", $prospecter->salary);
         $query->bindParam(":langue", $prospecter->langue);
         $query->bindParam(":availability", $prospecter->availability);
+        $query->bindParam(":biographie", $prospecter->biographie);
+        $query->bindParam(":description", $prospecter->description);
+
 
 
         $query->execute();   
@@ -109,7 +118,7 @@ class ProspecterDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("UPDATE prospecters SET idUser = :iduser, name = :name, mail = :mail, phone = :phone, job = :job, experience = :experience, salary = :salary, langue = :langue, availability = :availability WHERE id = :id");
+        $query = $this->bdd->prepare("UPDATE prospecters SET idUser = :iduser, name = :name, mail = :mail, phone = :phone, job = :job, experience = :experience, salary = :salary, langue = :langue, availability = :availability, biographie = :biographie, description = :description WHERE id = :id");
         
       
         $query->bindParam(":id", $prospecter->id);
@@ -122,6 +131,9 @@ class ProspecterDao extends DaoBase {
         $query->bindParam(":salary", $prospecter->salary);
         $query->bindParam(":langue", $prospecter->langue);
         $query->bindParam(":availability", $prospecter->availability);
+        $query->bindParam(":biographie", $prospecter->biographie);
+        $query->bindParam(":description", $prospecter->description);
+
         
         return $query->execute();
 
@@ -132,7 +144,7 @@ class ProspecterDao extends DaoBase {
         
         $prospecter = null;
         
-        $query = $this->bdd->prepare("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability FROM prospecters where id = :id");
+        $query = $this->bdd->prepare("SELECT id, idUser, name, mail, phone, job, experience, salary, langue, availability, biographie, description FROM prospecters where id = :id");
         
         $query->bindParam(":id", $id);
         
@@ -160,7 +172,12 @@ class ProspecterDao extends DaoBase {
 
                 $donnees['langue'],
 
-                $donnees['availability']
+                $donnees['availability'],
+
+                $donnees['biographie'],
+
+                $donnees['description']
+                
 
             );
 

@@ -21,8 +21,12 @@ class Prospecter {
 
     public $availability;
 
+    public $biographie;
+
+    public $description;
+
     
-    public function __construct($id, $idUser, $name, $mail, $phone, $job, $experience, $salary , $langue, $availability) {
+    public function __construct($id, $idUser, $name, $mail, $phone, $job, $experience, $salary , $langue, $availability, $biographie, $description) {
         
         $this->id = $id;
         
@@ -43,6 +47,11 @@ class Prospecter {
         $this->langue = $langue;
 
         $this->availability = $availability;
+
+        $this->biographie = $biographie;
+
+        $this->description = $description;
+
 
 
     }
