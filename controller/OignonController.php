@@ -1,12 +1,12 @@
 <?php
 require_once '../inc/autoload.php';
 
-use Dao\ProspecterDao as ProspecterDao;
+use Dao\OignonDao as OignonDao;
 
 $config = include '../inc/constants.php';
-$prospecterDao = new ProspecterDao($config);
-$prospecters  = $prospecterDao->findAllProspecters();
-$prospecterDao->close();
+$oignonDao = new OignonDao($config);
+$oignons  = $oignonDao->findAllProspecters();
+$oignonDao->close();
 
    
-require_once '../view/page6monprofil.php';
+require_once '../view/oignonView.php';
