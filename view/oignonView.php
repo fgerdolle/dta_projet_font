@@ -54,6 +54,11 @@ ob_start();
                       Oignons 
                       </a></button>
                     </div>
+                    <div>          
+                      <button><a href="TomateController.php" class="btn white-background">
+                      Tomates 
+                      </a></button>
+                    </div>
               </div>
             </div>
             </div>
