@@ -1,6 +1,6 @@
 <?php 
-$title = 'Liste des Prospects'; 
-$css = 'page5.css';
+$title = 'Liste des Oignons'; 
+$css = 'page4.css';
 ?>
 
 <?php 
@@ -20,8 +20,14 @@ ob_start();
         <br>
         <br>
         <br>
-        
-        <div class="container">
+        <div class="container-fluid">
+  
+  <br>
+  <br>
+  <div class="table-responsive">
+    <h1>Liste des Oignons</h1>
+<br />
+<div class="container-fluid">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Changer de catalogue
                 </button>
@@ -36,78 +42,78 @@ ob_start();
               </button>
               </div>
               <div class="modal-body">
-                  <form>
+                  
                       <label> Choisir le Catalogue : </label>
-                      <div class="form-row align-items-center">
-                        <div class="col-auto my-1">
-                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                          <option selected>Choose...</option>
-                          <option value="1">Salade</option>
-                          <option value="2">Tomate</option>
-                          <option value="3">Oignon</option>
-                        </select>
-                        </div>
-                      </div>
-                  </form>
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-              <button type="button" class="btn btn-primary">Ajouter</button>
-              </div>
-            </div>
-            </div>
-          </div>
-          <br>
-          <br>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title"><?php echo $oignon->name ?> </h5>
-                      <img src="pictures/salade-verte.jpg">
-                      <p class="card-text"><?php echo $oignon->description ?></p>
-                      <p> Prix : <?php echo $oignon->price ?></p>
+                      <div>          
+                      <button><a href="SaladeController.php" class="btn white-background">
+                      Salades 
+                      </a></button>
                     </div>
-                </div>
+                    <div>          
+                      <button><a href="OignonController.php" class="btn white-background">
+                      Oignons 
+                      </a></button>
+                    </div>
               </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Mâche</h5>
-                    <img src="pictures/mache.jpg">
-                    <p class="card-text">La mâche, très appreciable mais bien nettoyer avant dégustation. Sauf si on aime la terre.</p>
-                    <p> Prix : 8 euros</p>
-                </div>
-                </div>   
-            </div>
-              <div class="w-100"></div>
-            <div class="col">
-                    <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">La roquette</h5>
-                              <img src="pictures/roquette.jpeg">
-                              <p class="card-text">Délicieuse salade un poil piquant, pour une salade explosif.</p>
-                              <p> Prix : 10 euros</p>
-                            </div>
-                          </div>
-            </div>
-            <div class="col">
-                    <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Pourpier De Clayton</h5>
-                              <img src="pictures/pourpier_de_clayton.jpg">
-                              <p class="card-text">Salade de luxe. Un pur régale pour le palais.</p>
-                              <p>Prix : 18 euros</p>
-                            </div>
-                          </div>
             </div>
             </div>
           </div>
-                </div>
-            </div>
-            <?php 
+<br />
+<div>          
+	<a href="addProspectController.php" class="btn btn-primary">
+	<i class="fas fa-plus"></i> Ajouter un oignon 
+	</a>
+</div>
+
+<table class="table table-striped">
+	<thead>
+        <tr>
+            <th>#</th>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+	</thead>
+	<tbody>
+<?php
+        foreach ($oignons as $oignon) {
+?>
+		<tr>
+			<th scope="row"><?php echo $oignon->id ?></th> 
+			<td><?php echo $oignon->photo ?></a></td>
+            <td><?php echo $oignon->name ?></td>
+            <td><?php echo $oignon->price ?> euros</td> 
+			<td><?php echo $oignon->description ?></td> 
+			<td><a href="updateProspectController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
+			<td><a href="deleteProspectController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+<?php 
+}
+?>	  			
+	</tbody>
+</table>    
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+    </li>
+    </ul>
+  </nav>
+  
+  </div>
+
+<?php 
 $content = ob_get_clean(); 
 ?>
 
