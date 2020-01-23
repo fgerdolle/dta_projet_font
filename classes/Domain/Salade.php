@@ -1,6 +1,6 @@
 <?php
 namespace Domain;
-class Oignon {
+class Salade {
     public $id;
     
     public $photo;
