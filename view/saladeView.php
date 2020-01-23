@@ -1,6 +1,6 @@
 <?php 
-$title = 'Liste des Prospects'; 
-$css = 'page5.css';
+$title = 'Liste des Salades'; 
+$css = 'page4.css';
 ?>
 
 <?php 
@@ -20,8 +20,14 @@ ob_start();
         <br>
         <br>
         <br>
-        
-        <div class="container">
+        <div class="container-fluid">
+  
+  <br>
+  <br>
+  <div class="table-responsive">
+    <h1>Liste des Salades</h1>
+<br />
+<div class="container-fluid">
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                 Changer de catalogue
                 </button>
@@ -52,15 +58,62 @@ ob_start();
             </div>
             </div>
           </div>
-          <br>
-          <br>
-          
-            </div>
-            </div>
-          </div>
-                </div>
-            </div>
-            <?php 
+<br />
+<div>          
+	<a href="addSaladeController.php" class="btn btn-primary">
+	<i class="fas fa-plus"></i> Ajouter une salade 
+	</a>
+</div>
+
+<table class="table table-striped">
+	<thead>
+        <tr>
+            <th>#</th>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+	</thead>
+	<tbody>
+<?php
+        foreach ($salades as $salade) {
+?>
+		<tr>
+			<th scope="row"><?php echo $salade->id ?></th> 
+			<td><?php echo $salade->photo ?></a></td>
+            <td><?php echo $salade->name ?></td>
+            <td><?php echo $salade->price ?> euros</td> 
+			<td><?php echo $salade->description ?></td> 
+			<td><a href="updateSaladeController.php?id=<?php echo $salade->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
+			<td><a href="deleteSaladeController.php?id=<?php echo $salade->id ?>"><i class="fas fa-trash-alt"></i></a></td>
+        </tr>
+<?php 
+}
+?>	  			
+	</tbody>
+</table>    
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+    <a class="page-link" href="#">Next</a>
+    </li>
+    </ul>
+  </nav>
+  
+  </div>
+
+<?php 
 $content = ob_get_clean(); 
 ?>
 
