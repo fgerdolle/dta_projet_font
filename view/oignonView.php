@@ -60,7 +60,7 @@ ob_start();
           </div>
 <br />
 <div>          
-	<a href="addProspectController.php" class="btn btn-primary">
+	<a href="addOignonController.php" class="btn btn-primary">
 	<i class="fas fa-plus"></i> Ajouter un oignon 
 	</a>
 </div>
@@ -88,8 +88,8 @@ ob_start();
             <td><?php echo $oignon->name ?></td>
             <td><?php echo $oignon->price ?> euros</td> 
 			<td><?php echo $oignon->description ?></td> 
-			<td><a href="updateProspectController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
-			<td><a href="deleteProspectController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-trash-alt"></i></a></td>
+			<td><a href="updateOignonController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-pencil-alt"></i></a></td>
+			<td><a href="deleteOignonController.php?id=<?php echo $oignon->id ?>"><i class="fas fa-trash-alt"></i></a></td>
         </tr>
 <?php 
 }

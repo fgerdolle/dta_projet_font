@@ -66,7 +66,7 @@ class OignonsDao extends DaoBase {
         
         $result;
         
-        $query = $this->bdd->prepare("INSERT INTO oignons (photo, name, price, descriptions) VALUES (:photo, :name, :price, :description)");
+        $query = $this->bdd->prepare("INSERT INTO oignons (photo, name, price, description) VALUES (:photo, :name, :price, :description)");
         
         $query->bindParam(":photo", $oignon->photo);
         $query->bindParam(":name", $oignon->name);
@@ -93,7 +93,7 @@ class OignonsDao extends DaoBase {
         return $query->execute();
     }
     
-    public function updateOignons($oignon) {
+    public function updateOignon($oignon) {
         
         $result;
         
