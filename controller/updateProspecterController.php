@@ -26,6 +26,8 @@ $langue = "";
 $salary = "";
 $langue = "";
 $availability = "";
+$biographie = "";
+$description = "";
 
 
 if (!empty($_GET['id'])) {
@@ -45,6 +47,9 @@ if (!empty($_GET['id'])) {
     $salary = $prospecter->salary;
     $langue = $prospecter->langue;
     $availability = $prospecter ->availability;
+    $biographie = $prospecter-> biographie;
+    $description = $prospecter->description;
+
  
 }
 else if (!empty($_POST)) {
@@ -59,9 +64,12 @@ else if (!empty($_POST)) {
     $salary = $_POST["salary"];
     $langue = $_POST["langue"];
     $availability = $_POST["availability"];
+    $biographie = $_POST["biographie"];
+    $description = $_POST["description"];
+
     
     
-    $prospecter = new Prospecter($id, $idUser, $name, $mail, $phone, $job, $experience, $salary , $langue, $availability);
+    $prospecter = new Prospecter($id, $idUser, $name, $mail, $phone, $job, $experience, $salary , $langue, $availability, $biographie, $description);
     
     $errors = $prospecterService->isValid($prospecter);
     

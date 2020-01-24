@@ -70,11 +70,7 @@ ob_start();
                                 <a href="">Bootsnipp Profile</a><br/>
                                 <a href="">Bootply Profile</a>
                             </div>
-                            <div>          
-                                <a href="addRDVProspectController.php" class="btn btn-primary">
-                                <i class="fas fa-plus"></i> Changer de Prospecter 
-                                </a>
-                            </div>
+                         
                             <div>          
                                 <a href="updateProspecterController.php?id=<?php echo $prospecter->id ?>" class="btn btn-primary">
                                 <i class="fas fa-plus"></i> Modifier un Prospecter 
