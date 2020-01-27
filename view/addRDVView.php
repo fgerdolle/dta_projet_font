@@ -28,35 +28,35 @@ ob_start();
 ?>
 <form action="addRDVProspectController.php" method ="POST">
     <div>
-        <input type="date"  name="date" class="form-control" placeholder="date" value="<?php  echo $date;?>">
+        <input type="date"  name="date" class="formcontrol" placeholder="date" value="<?php  echo $date;?>">
     </div>
     <br>
     <div>
-        <input type="time"  name="time" class="form-control" placeholder="time" value="<?php  echo $time;?>">
+        <input type="time"  name="time" class="formcontrol" placeholder="time" value="<?php  echo $time;?>">
     </div>
     <br>
     <div>
-        <input type="text"  name="firstName" class="form-control" placeholder="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>" value="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>">
+        <input type="text"  name="firstName" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>" value="<?php if(empty($_POST)){echo "firstName";} else {echo $_POST["firstName"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="lastName" class="form-control" placeholder="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>" value="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>">
+        <input type="text" name="lastName" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>" value="<?php if(empty($_POST)){echo "lastName";} else {echo $_POST["lastName"];} ?>">
     </div>
     <br>
     <div>
-        <input type="phone" name="phone" class="form-control" placeholder="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>" value="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>">
+        <input type="phone" name="phone" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>" value="<?php if(empty($_POST)){echo "phone";} else {echo $_POST["phone"];} ?>">
     </div>
     <br>
     <div>
-        <input type="email" name="mail" class="form-control" placeholder="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>" value="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>">
+        <input type="email" name="mail" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>" value="<?php if(empty($_POST)){echo "mail";} else {echo $_POST["mail"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="adress" class="form-control" placeholder="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>" value="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>">
+        <input type="text" name="adress" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>" value="<?php if(empty($_POST)){echo "adress";} else {echo $_POST["adress"];} ?>">
     </div>
     <br>
     <div>
-        <input type="text" name="remarque" class="form-control" placeholder="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>" value="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>">
+        <input type="text" name="remarque" class="formcontrol" placeholder="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>" value="<?php if(empty($_POST)){echo "remarque";} else {echo $_POST["remarque"];} ?>">
     </div>
     <br>
 

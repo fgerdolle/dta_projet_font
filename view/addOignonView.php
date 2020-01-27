@@ -28,19 +28,19 @@ ob_start();
 ?>
 <form action="addOignonController.php" method ="POST">
     <div>
-        <input type="text"  name="photo" class="form-control" placeholder="photo" value="<?php  echo $photo;?>">
+        <input type="text"  name="photo" class="formcontrol" placeholder="photo" value="<?php  echo $photo;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="name" class="form-control" placeholder="name" value="<?php  echo $name?>">
+        <input type="text" name="name" class="formcontrol" placeholder="name" value="<?php  echo $name?>">
     </div>
     <br>
     <div>
-        <input type="text" name="price" class="form-control" placeholder="price" value="<?php  echo $price;?>">
+        <input type="text" name="price" class="formcontrol" placeholder="price" value="<?php  echo $price;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="description" class="form-control" placeholder="description" value="<?php  echo $description;?>">
+        <input type="text" name="description" class="formcontrol" placeholder="description" value="<?php  echo $description;?>">
     </div>
     <br>
 

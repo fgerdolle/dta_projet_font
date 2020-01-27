@@ -28,43 +28,43 @@ ob_start();
 ?>
 <form action="addProspectController.php" method ="POST">
     <div>
-        <input type="text"  name="firstName" class="form-control" placeholder="FirstName" value="<?php  echo $firstName;?>">
+        <input type="text"  name="firstName" class="formcontrol" placeholder="FirstName" value="<?php  echo $firstName;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="lastName" class="form-control" placeholder="LastName" value="<?php  echo $lastName;?>">
+        <input type="text" name="lastName" class="formcontrol" placeholder="LastName" value="<?php  echo $lastName;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="age" class="form-control" placeholder="age" value="<?php  echo $age;?>">
+        <input type="text" name="age" class="formcontrol" placeholder="age" value="<?php  echo $age;?>">
     </div>
     <br>
     <div>
-        <input type="date" name="birth" class="form-control" placeholder="birth" value="<?php  echo $birth;?>">
+        <input type="date" name="birth" class="formcontrol" placeholder="birth" value="<?php  echo $birth;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="gender" class="form-control" placeholder="gender" value="<?php  echo $gender;?>">
+        <input type="text" name="gender" class="formcontrol" placeholder="gender" value="<?php  echo $gender;?>">
     </div>
     <br>
     <div>
-        <input type="phone" name="phone" class="form-control" placeholder="phone" value="<?php  echo $phone;?>">
+        <input type="phone" name="phone" class="formcontrol" placeholder="phone" value="<?php  echo $phone;?>">
     </div>
     <br>
     <div>
-        <input type="email" name="mail" class="form-control" placeholder="mail" value="<?php  echo $mail;?>">
+        <input type="email" name="mail" class="formcontrol" placeholder="mail" value="<?php  echo $mail;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="adress" class="form-control" placeholder="adress" value="<?php  echo $adress;?>">
+        <input type="text" name="adress" class="formcontrol" placeholder="adress" value="<?php  echo $adress;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="purchase" class="form-control" placeholder="purchase" value="<?php  echo $purchase;?>">
+        <input type="text" name="purchase" class="formcontrol" placeholder="purchase" value="<?php  echo $purchase;?>">
     </div>
     <br>
     <div>
-        <input type="text" name="remarque" class="form-control" placeholder="remarque" value="<?php  echo $remarque;?>">
+        <input type="text" name="remarque" class="formcontrol" placeholder="remarque" value="<?php  echo $remarque;?>">
     </div>
     <br>
 

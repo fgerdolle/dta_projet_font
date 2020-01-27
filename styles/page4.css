@@ -97,7 +97,10 @@ th{
 }
 form{
     color: whitesmoke;
+    text-align :center;
 }
+
+
 
 .btn-info , .btn-secondary {
     border-radius: 0;

@@ -14,7 +14,7 @@ ob_start();
 	<input type="hidden" name="id" value="<?php echo $id; ?>" />
 	<div class="form-group">
     	<label for="idUser">ID User</label>
-    	<input type="text" class="form-control standardWidth" id="idUser" name="idUser" value="<?php echo $idUser; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="idUser" name="idUser" value="<?php echo $idUser; ?>">
     	<?php 
     	if (!empty($errors["prospecter.idUser"])) {
     	?>
@@ -26,7 +26,7 @@ ob_start();
   	
   	<div class="form-group">
     	<label for="name">Name</label>
-    	<input type="text" class="form-control standardWidth" id="name" name="name" value="<?php echo $name; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="name" name="name" value="<?php echo $name; ?>">
     	<?php 
     	if (!empty($errors["prospecter.name"])) {
     	?>
@@ -37,7 +37,7 @@ ob_start();
       </div>
       <div class="form-group">
         <label for="mail">Mail</label>
-        <input type="mail" class="form-control standardWidth" id="mail" name="mail" value="<?php echo $mail; ?>">
+        <input type="mail" class="formcontrol standardWidth" id="mail" name="mail" value="<?php echo $mail; ?>">
         <?php 
         if (!empty($errors["prospecter.mail"])) {
         ?>
@@ -49,7 +49,7 @@ ob_start();
 
       <div class="form-group">
         <label for="phone">Phone</label>
-        <input type="phone" class="form-control standardWidth" id="phone" name="phone" value="<?php echo $phone; ?>">
+        <input type="phone" class="formcontrol standardWidth" id="phone" name="phone" value="<?php echo $phone; ?>">
         <?php 
         if (!empty($errors["prospecter.phone"])) {
         ?>
@@ -61,7 +61,7 @@ ob_start();
 
     <div class="form-group">
         <label for="job">Job</label>
-        <input type="text" class="form-control standardWidth" id="job" name="job" value="<?php echo $job; ?>">
+        <input type="text" class="formcontrol standardWidth" id="job" name="job" value="<?php echo $job; ?>">
         <?php 
         if (!empty($errors["prospecter.job"])) {
         ?>
@@ -73,7 +73,7 @@ ob_start();
       
     <div class="form-group">
         <label for="experience">Experience</label>
-        <input type="text" class="form-control standardWidth" id="experience" name="experience" value="<?php echo $experience; ?>">
+        <input type="text" class="formcontrol standardWidth" id="experience" name="experience" value="<?php echo $experience; ?>">
         <?php 
         if (!empty($errors["prospecter.experience"])) {
         ?>
@@ -85,7 +85,7 @@ ob_start();
       
     <div class="form-group">
         <label for="salary">Salary</label>
-        <input type="text" class="form-control standardWidth" id="salary" name="salary" value="<?php echo $salary; ?>">
+        <input type="text" class="formcontrol standardWidth" id="salary" name="salary" value="<?php echo $salary; ?>">
         <?php 
         if (!empty($errors["prospecter.salary"])) {
         ?>
@@ -96,7 +96,7 @@ ob_start();
   	</div>
     <div class="form-group">
         <label for="langue">Langue</label>
-        <input type="text" class="form-control standardWidth" id="langue" name="langue" value="<?php echo $langue; ?>">
+        <input type="text" class="formcontrol standardWidth" id="langue" name="langue" value="<?php echo $langue; ?>">
         <?php 
         if (!empty($errors["prospecter.langue"])) {
         ?>
@@ -108,7 +108,7 @@ ob_start();
     
     <div class="form-group">
         <label for="availability">Availability</label>
-        <input type="text" class="form-control standardWidth" id="availability" name="availability" value="<?php echo $availability; ?>">
+        <input type="text" class="formcontrol standardWidth" id="availability" name="availability" value="<?php echo $availability; ?>">
         <?php 
         if (!empty($errors["prospecter.availability"])) {
         ?>

@@ -15,7 +15,7 @@ ob_start();
     
     <div class="form-group">
     	<label for="date">Date</label>
-    	<input type="date" class="form-control standardWidth" id="date" name="date" value="<?php echo $date; ?>">
+    	<input type="date" class="formcontrol standardWidth" id="date" name="date" value="<?php echo $date; ?>">
     	<?php 
     	if (!empty($errors["rdv.date"])) {
     	?>
@@ -27,7 +27,7 @@ ob_start();
       
       <div class="form-group">
     	<label for="time">Time</label>
-    	<input type="text" class="form-control standardWidth" id="time" name="time" value="<?php echo $time; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="time" name="time" value="<?php echo $time; ?>">
     	<?php 
     	if (!empty($errors["rdv.time"])) {
     	?>
@@ -38,7 +38,7 @@ ob_start();
   	</div>
 	<div class="form-group">
     	<label for="firstName">First Name</label>
-    	<input type="text" class="form-control standardWidth" id="firstName" name="firstName" value="<?php echo $firstName; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="firstName" name="firstName" value="<?php echo $firstName; ?>">
     	<?php 
     	if (!empty($errors["rdv.firstName"])) {
     	?>
@@ -50,7 +50,7 @@ ob_start();
   	
   	<div class="form-group">
     	<label for="lastName">Last Name</label>
-    	<input type="text" class="form-control standardWidth" id="lastName" name="lastName" value="<?php echo $lastName; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="lastName" name="lastName" value="<?php echo $lastName; ?>">
     	<?php 
     	if (!empty($errors["rdv.lastName"])) {
     	?>
@@ -63,7 +63,7 @@ ob_start();
 
     <div class="form-group">
         <label for="phone">Phone</label>
-        <input type="phone" class="form-control standardWidth" id="phone" name="phone" value="<?php echo $phone; ?>">
+        <input type="phone" class="formcontrol standardWidth" id="phone" name="phone" value="<?php echo $phone; ?>">
         <?php 
         if (!empty($errors["rdv.phone"])) {
         ?>
@@ -75,7 +75,7 @@ ob_start();
       
     <div class="form-group">
         <label for="mail">Mail</label>
-        <input type="mail" class="form-control standardWidth" id="mail" name="mail" value="<?php echo $mail; ?>">
+        <input type="mail" class="formcontrol standardWidth" id="mail" name="mail" value="<?php echo $mail; ?>">
         <?php 
         if (!empty($errors["rdv.mail"])) {
         ?>
@@ -87,7 +87,7 @@ ob_start();
       
     <div class="form-group">
         <label for="adress">Adress</label>
-        <input type="text" class="form-control standardWidth" id="adress" name="adress" value="<?php echo $adress; ?>">
+        <input type="text" class="formcontrol standardWidth" id="adress" name="adress" value="<?php echo $adress; ?>">
         <?php 
         if (!empty($errors["rdv.adress"])) {
         ?>
@@ -99,7 +99,7 @@ ob_start();
       
     <div class="form-group">
         <label for="remarque">Remarque</label>
-        <input type="text" class="form-control standardWidth" id="remarque" name="remarque" value="<?php echo $remarque; ?>">
+        <input type="text" class="formcontrol standardWidth" id="remarque" name="remarque" value="<?php echo $remarque; ?>">
         <?php 
         if (!empty($errors["rdv.remarque"])) {
         ?>

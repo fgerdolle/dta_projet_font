@@ -14,7 +14,7 @@ ob_start();
 	<input type="hidden" name="id" value="<?php echo $id; ?>" />
 	<div class="form-group">
     	<label for="photo">Photo </label>
-    	<input type="text" class="form-control standardWidth" id="photo" name="photo" value="<?php echo $photo; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="photo" name="photo" value="<?php echo $photo; ?>">
     	<?php 
     	if (!empty($errors["tomate.photo"])) {
     	?>
@@ -26,7 +26,7 @@ ob_start();
   	
   	<div class="form-group">
     	<label for="name">Name</label>
-    	<input type="text" class="form-control standardWidth" id="name" name="name" value="<?php echo $name; ?>">
+    	<input type="text" class="formcontrol standardWidth" id="name" name="name" value="<?php echo $name; ?>">
     	<?php 
     	if (!empty($errors["tomate.name"])) {
     	?>
@@ -37,7 +37,7 @@ ob_start();
       </div>
       <div class="form-group">
         <label for="price">Price</label>
-        <input type="text" class="form-control standardWidth" id="price" name="price" value="<?php echo $price; ?>">
+        <input type="text" class="formcontrol standardWidth" id="price" name="price" value="<?php echo $price; ?>">
         <?php 
         if (!empty($errors["tomate.price"])) {
         ?>
@@ -49,7 +49,7 @@ ob_start();
 
       <div class="form-group">
         <label for="description">Description</label>
-        <input type="text" class="form-control standardWidth" id="description" name="description" value="<?php echo $description; ?>">
+        <input type="text-area" class="formcontrol standardWidth" id="description" name="description" value="<?php echo $description; ?>">
         <?php 
         if (!empty($errors["tomate.description"])) {
         ?>
